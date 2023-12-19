@@ -2,7 +2,7 @@ eureka:
   instance:
     prefer-ip-address: true
     #added hostname
-    hostname: localhost  
+    #hostname: localhost  
   client:
     fetch-registry: true
     register-with-eureka: true
@@ -15,5 +15,6 @@ okta:
     audience: api://default
 spring:
   zipkin:
-    baseUrl: http://localhost:9411
+    baseUrl: http://zipkin-svc:9411
+    #baseUrl: http://localhost:9411
     #baseUrl: http://zipkin-svc:9411

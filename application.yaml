@@ -1,6 +1,7 @@
 eureka:
   instance:
-    prefer-ip-address: true
+   # prefer-ip-address: true
+    preferIpAddress: true
     #added hostname
     hostname: localhost
   client:
